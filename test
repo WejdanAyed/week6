@@ -1,0 +1,91 @@
+#Day34
+def my_function (food):
+    for x0 in food :
+        print(x0)
+fruits = ["Apple" , "banana" , "cherry"]
+my_function(fruits)
+def my_function2 (y0):
+    return 5 * y0
+print(my_function2(3))
+print(my_function2(4))
+print(my_function2(5))
+def my_function3(child3 , child2 , child1):
+    print("The youngest child is" + child3)
+my_function3(child1 = "Email" , child2= "Tobias" , child3= "Linus")
+def tri_recursion (kk):
+    if (kk >0):
+        resullt = kk + tri_recursion(kk -1)
+        print(resullt)
+    else:
+            resullt = 0
+    return resullt
+print("\n\nRecursion Example Results")
+tri_recursion(6)
+
+
+#Day35
+p = lambda a,b : a * b
+print(p(5,6))
+
+k1 = lambda c,v,m : c + v+ m
+print(k1(3,5,6))
+
+#Day36
+def myfunc (n2):
+    return lambda a : a * n2
+mydoubler = myfunc(2)
+mytripler = myfunc(3)
+print(mytripler(11))
+print(mydoubler(11))
+
+#day37
+cars = ["Ford" , "Volvo" , "BMW"]
+xx = cars [0]
+print(xx)
+
+cars[1] = "Toyota"
+print(cars)
+
+yy = len(cars)
+print(yy)
+
+#Day38
+alphabet = ["A" , "B" , "C" , "D" ]
+for x3 in alphabet:
+    print(x3)
+
+alphabet.append("G")
+print(alphabet)
+
+alphabet.pop(2)
+print(alphabet)
+
+alphabet.remove("D")
+
+#Day39&40
+def num (L , W ):
+    if L ==0:
+        return 1
+    else:
+        return L * num (L,W-1)
+print(num)
+
+
+list1 = [-4 , -6,-5 ,-1 , 2 ,3 ,7 ,9 , 88]
+b = lambda aa : aa > 0
+for x11 in list1:
+    print(x11) 
+def num (x , y ):
+    if (x > 0):
+        result = x ** y
+        print(result)
+    else:
+        result = 0
+    return result
+
+num(5,3)
+
+
+list1 = [-4 , -6,-5 ,-1 , 2 ,3 ,7 ,9 , 88]
+b = list(filter(lambda n: n > 0 , list1))
+print(b)
